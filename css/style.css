@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: "Radio Canada Big", sans-serif;  */
+
+body{
+    font-family: "Radio Canada Big", sans-serif;
+    height: 100%;
+    margin: 0;
+    
+}
+
+
+/* Estilo para el header*/
+
+header{
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .header1{
+    display: flex;
+    background-color: #61AD2F;
+    font-size: .9375rem;
+    color: #ffffff;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: .375rem;       
+}
+
+header .header1 h2{
+    font-size: .9375rem;
+    margin-bottom: 0;
+}
+
+header .header1 .mail{
+    font-size: .9375rem;
+    margin-bottom: 0;
+}
+
+header .header1 .phone{
+    font-size: .9375rem;
+    margin-bottom: 0;
+}
+
+
+
+header .logo img{
+    display: block;
+    margin: 0 auto;
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+    width: 12.5rem;
+}
+
+/* header nav .navegacion {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav .navegacion li {
+    margin: 0 .3125rem .3125rem .3125rem; 
+}
+
+header nav .navegacion li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3.125rem 0rem; 
+}
+
+header nav .navegacion li a:hover {
+    color: #61AD2F;
+} */
+
+/* .navbar{
+    justify-content: center;
+    
+}
+
+.navbar .navbar-nav{
+    flex-direction: row;
+    justify-content: center;
+}  */
+
+
+.navbar .nav-link{
+    color:black;
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link:hover{
+    color: #61AD2F;
+}
+
+.navbar .navbar-toggler {
+    margin-left: 80%; /* Empuja el botón hacia la derecha */
+    
+}
+
+.navbar .navbar-toggler:hover{
+    color: #61AD2F;
+}
+
+.transparent-rectangle {
+    width: 70vw; /* 70% del ancho del viewport */
+    height: auto; /* Ajusta la altura automáticamente al contenido */
+    background-color: hsla(96, 57%, 43%, 0.3); /* Rectángulo blanco con 50% de transparencia */
+    display: flex; /* Para centrar el botón */
+    justify-content: center; /* Centra horizontalmente el botón */
+    align-items: center; /* Centra verticalmente el botón */
+    padding: 10px; /* Añade algo de espacio interno */
+    margin: 0 auto; /* Centra el rectángulo en la página */
+}
+
+
+
+
+
+.transparent-rectangle .seleccionarPag {
+    margin-bottom: 0 !important;
+    margin-left: 20%; /* Añade un margen a la izquierda del 20% */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+   
+}
+  
+
+@media  (min-width:992px) {
+    .transparent-rectangle{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* Estilo para el main */
+
+
+main{
+    margin-top: 12.5rem;
+    background-image: url(../assets/comodoro2-laptop-l.jpg);
+    background-size: cover;
+    background-position: center;
+    /*height: 100vh;*/
+    position: relative;
+    background-attachment: fixed;
+}
+
+main .contenido{
+    background-color: rgba(128, 128, 128, 0.7);
+    position: relative;
+    margin: 0 3%;
+}
+
+main .contenido h1{   
+    padding-top: 5%;
+    padding-bottom: 4%;
+    text-align: center;
+    font-size: 2.5rem;    
+}
+
+main .contenido .cajaFotosCuerpo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .contenido .cajaFotosCuerpo img{
+    transform: scale(1.7);
+    margin: 3.125rem;
+}
+
+main .contenido .cajaFotosCuerpo .fotosCuerpo3{
+    transform: scale(1.9);
+}
+
+main .contenido article{
+    font-size: 1.25rem;
+    margin: 5%;
+}
+
+main .servicios{
+    display: flex;
+    justify-content: space-around;
+}
+
+main .servicios .tilde{
+    width: 12.5rem;
+    height: 15.625rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .servicios .tilde img{
+    max-width: 100%;
+    height: auto;
+}
+
+main .servicios .tilde a{
+    margin: 0;
+    padding: 0;
+    
+    color: black;
+    text-decoration: none;
+}
+
+main .servicios .tilde a h3{
+    font-size: .9375rem;
+}
+
+
+
+main .servicios .tilde a:hover{
+    color: #61AD2F;
+}
+
+/* Estilos para el footer */
+
+
+
+footer .datos{
+    display: flex;
+    justify-content: space-around;
+    background-color: #61AD2F;
+    color:white;
+}
+
+footer .datos .ensayos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: .9375rem;
+    margin-top: 2.5rem;
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+footer .datos address{
+    text-align: center;
+    font-style: normal;
+    padding-top: 1.875rem;
+}
+
+footer .datos .telefonos{
+    text-align: center;
+    padding-top: 1.25rem;
+}
+
+footer .datos .telefonos i{
+    color: #ffffff;
+    margin-right: 8px;
+}
+
+footer .datos .telefonos p{
+    padding: .1875rem;
+}
+
+
+footer .copyright{
+    text-align: center;
+}
+
+
+/* Estilos para el Body de SERVICIOS */
+
+main .contenido h2{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main .losServicios{
+    margin: 20px;
+}
+
+main .losServicios h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #61AD2F;
+}
+
+main .losServicios .caja1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.25rem;
+}
+
+main .losServicios .caja1 img {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 15%;
+    border-radius: 8px;
+}
+
+main .losServicios .caja1 p {
+    max-width: 55%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    margin-right: 13%;
+}
+
+main #os{
+    text-align: center;
+    margin-bottom: 1.875rem;
+    font-size: 24px;
+    color: #61AD2F;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+#os {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.otrosServicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem; /* Espacio entre cada servicio */
+}
+
+.servicio {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.servicio h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #61AD2F;
+}
+
+.servicio img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.servicio p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/*Tengo que corregir el posicionamiento de "Otros Servicios".
+Incluso, dejan un borde blanco entre el main y el footer, 
+que no encontré de donde salió. */
+
+
+
+/* Estilos para el Body de TRABAJOS */
+
+
+main .trabajos{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 2.5rem;    
+    
+}
+
+main .fotosTrabajo1{
+    display: flex;
+    justify-content: space-around;
+    margin: 6.25rem 15.625rem;
+    transform: scale(1.5);
+}
+
+main .fotosTrabajo2{
+    display: flex;
+    justify-content: space-around;
+    margin: 6.25rem 15.625rem;
+    transform: scale(1.6);
+}
+
+
+/*Problemas de centrado y armado de esta página,
+a solucionar la próxima preentrega*/
+
+
+
+
+/*Estilos para el Body de Clientes*/
+
