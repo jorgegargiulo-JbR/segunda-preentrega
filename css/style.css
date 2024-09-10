@@ -16,7 +16,7 @@ body{
 }
 
 
-/* Estilo para el header*/
+/* Estilos para el header*/
 
 header{
     position: fixed;
@@ -25,6 +25,8 @@ header{
     width: 100%;
     z-index: 1000;
 }
+
+/* Primer rectángulo verde */
 
 header .header1{
     display: flex;
@@ -52,7 +54,7 @@ header .header1 .phone{
     margin-bottom: 0;
 }
 
-
+/* Logo */
 
 header .logo img{
     display: block;
@@ -62,44 +64,11 @@ header .logo img{
     width: 12.5rem;
 }
 
-/* header nav .navegacion {
-    list-style-type: none;
-    padding: 0;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    justify-content: space-around;
-}
-
-header nav .navegacion li {
-    margin: 0 .3125rem .3125rem .3125rem; 
-}
-
-header nav .navegacion li a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 3.125rem 0rem; 
-}
-
-header nav .navegacion li a:hover {
-    color: #61AD2F;
-} */
-
-/* .navbar{
-    justify-content: center;
-    
-}
-
-.navbar .navbar-nav{
-    flex-direction: row;
-    justify-content: center;
-}  */
-
+/* Barra de navegación Bootstrap */
 
 .navbar .nav-link{
     color:black;
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -127,17 +96,11 @@ header nav .navegacion li a:hover {
     margin: 0 auto; /* Centra el rectángulo en la página */
 }
 
-
-
-
-
 .transparent-rectangle .seleccionarPag {
     margin-bottom: 0 !important;
     margin-left: 20%; /* Añade un margen a la izquierda del 20% */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-   
 }
-  
 
 @media  (min-width:992px) {
     .transparent-rectangle{
@@ -160,22 +123,21 @@ main{
     background-image: url(../assets/backgrounds/comodoro2-laptop-l.jpg);
     background-size: cover;
     background-position: center;
-    /*height: 100vh;*/
     position: relative;
     background-attachment: fixed;
 }
 
 main .contenido{
-    background-color: rgba(128, 128, 128, 0.7);
+    background-color: rgba(217, 220, 231, 0.6);
     position: relative;
     margin: 0 3%;
 }
 
 main .contenido h1{   
-    padding-top: 5%;
-    padding-bottom: 4%;
+    padding-top: 3%;
+    padding-bottom: 2%;
     text-align: center;
-    font-size: 2.5rem;    
+    font-size: 2.5rem;
 }
 
 main .contenido .cajaFotosCuerpo{
@@ -198,6 +160,11 @@ main .contenido .cajaFotosCuerpo img{
 main .contenido article{
     font-size: 1.25rem;
     margin: 5%;
+}
+
+#historia{
+    padding-top: 13.75rem;
+    margin-top: -13.75rem;
 }
 
 main .servicios{
