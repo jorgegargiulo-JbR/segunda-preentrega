@@ -138,6 +138,7 @@ main .contenido h1{
     padding-bottom: 2%;
     text-align: center;
     font-size: 2.5rem;
+    font-weight: bolder;
 }
 
 main .contenido .cajaFotosCuerpo{
