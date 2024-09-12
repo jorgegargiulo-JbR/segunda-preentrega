@@ -121,7 +121,7 @@ header .logo img{
 
 
 
-/* Estilo para el main */
+/* Estilos para el main de INDEX */
 
 
 main{
@@ -260,7 +260,7 @@ footer .datos .telefonos p i {
 
 
 
-/* Estilos para el Body de SERVICIOS */
+/* Estilos para el main de SERVICIOS */
 
 
 main .contenido .titulo{
@@ -381,37 +381,64 @@ main {
 
 
 
-/* Estilos para el Body de TRABAJOS */
+/* Estilos para el main de TRABAJOS */
 
+main .contenido2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(217, 220, 231, 0.6);
+    position: relative;
+    margin: 0 3%;
+}
 
-main .trabajos{
-    padding-top: 2%;
-    padding-bottom: 5%;
+main .contenido2 .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+}
+
+main .contenido2 .titulo h1, main .contenido2 .titulo h2{   
+    padding-top: 5%;
+    padding-bottom: 2%;
     text-align: center;
-    font-size: 2.5rem;    
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+
+main .contenido2 .losTrabajos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    width: 100%;
+    max-width: 1600px;
+}
+
+main .contenido2 .losTrabajos .trabajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .contenido2 .losTrabajos img{
+    width: 80%;
+    object-fit: contain;
     
 }
 
-main .fotosTrabajo1{
-    display: flex;
-    justify-content: space-around;
-    margin: 6.25rem 15.625rem;
-    transform: scale(1.5);
-}
-
-main .fotosTrabajo2{
-    display: flex;
-    justify-content: space-around;
-    margin: 6.25rem 15.625rem;
-    transform: scale(1.6);
+main .contenido2 .losTrabajos p{
+    margin-top: .625rem;
+    font-size: 1.5625rem;
 }
 
 
-/*Problemas de centrado y armado de esta página,
-a solucionar la próxima preentrega*/
-
-
-
-
-/*Estilos para el Body de Clientes*/
-
+/* main .contenido .losTrabajos img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+} */
