@@ -460,4 +460,75 @@ main .contenido2 .losClientes img{
 
 
 
+/* Estilos para el mail de CONTACTO */
+
+main .contenido3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(217, 220, 231, 0.6);
+    position: relative;
+    margin: 0 3%;
+}
+
+main .contenido3 .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+}
+
+main .contenido3 .titulo h1, main .contenido3 .titulo h2{   
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+
+main .contenido3 .formulario-container .mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-right: 20px; 
+}
+
+main .contenido3 .formulario-container .mapa img {
+    width: 100%; 
+    max-width: 43.75rem;
+}
+
+main .contenido3 .formulario-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+}
+
+main .contenido3 .formulario-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 400px; 
+}
+
+main .contenido3 .formulario-container form .submit-btn {
+    margin-top: 30px; 
+    align-self: flex-start; 
+  }
+  
+  @media (min-width: 768px) {
+    .formulario-container {
+      display: flex;
+      justify-content: space-between; 
+    }
+  
+    .mapa,
+    form {
+      flex: 1; 
+    }
+  }
+
+
+
 
