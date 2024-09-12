@@ -16,6 +16,7 @@ body{
 }
 
 
+
 /* Estilos para el header*/
 
 header{
@@ -120,11 +121,6 @@ header .logo img{
 
 
 
-
-
-
-
-
 /* Estilo para el main */
 
 
@@ -213,52 +209,9 @@ main .servicios .tilde a:hover{
 }
 
 
+
 /* Estilos para el footer */
 
-
-
-/*footer .datos{
-    display: flex;
-    justify-content: space-around;
-    background-color: #61AD2F;
-    color:white;
-}*/
-
-
-
-/*footer .datos .ensayos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: .9375rem;
-    margin-top: 2.5rem;
-    font-size: 2.1875rem;
-    font-weight: bold;
-}
-
-footer .datos address{
-    text-align: center;
-    font-style: normal;
-    padding-top: 1.875rem;
-}
-
-footer .datos .telefonos{
-    text-align: center;
-    padding-top: 1.25rem;
-}
-
-footer .datos .telefonos i{
-    color: #ffffff;
-    margin-right: 8px;
-}
-
-footer .datos .telefonos p{
-    padding: .1875rem;
-}
-
-
-*/
 
 footer .datos{
     display: grid;
@@ -305,24 +258,35 @@ footer .datos .telefonos p i {
 }
 
 
+
+
 /* Estilos para el Body de SERVICIOS */
 
-main .contenido h2{
-    padding-top: 2%;
+
+main .contenido .titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .625rem;
+}
+
+main .contenido .titulo h1, main .contenido .titulo h2{
+    padding-top: 3%;
     padding-bottom: 2%;
     text-align: center;
     font-size: 2.5rem;
+    font-weight: bolder;
 }
 
 main .losServicios{
-    margin: 20px;
+    margin: 90px;
 }
 
 main .losServicios h3{
     text-align: center;
     margin-bottom: 20px;
-    font-size: 24px;
-    color: #61AD2F;
+    font-size: 1.875rem;
+    color: #000000;
 }
 
 main .losServicios .caja1{
@@ -330,14 +294,14 @@ main .losServicios .caja1{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 6.25rem;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
-main .losServicios .caja1 img {
-    max-width: 40%;
-    height: auto;
-    margin-right: 20px;
-    margin-left: 15%;
-    border-radius: 8px;
+.losServicios .caja1 img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
 }
 
 main .losServicios .caja1 p {
@@ -346,14 +310,13 @@ main .losServicios .caja1 p {
     font-size: 16px;
     line-height: 1.5;
     color: #000000;
-    margin-right: 13%;
 }
 
 main #os{
     text-align: center;
     margin-bottom: 1.875rem;
-    font-size: 24px;
-    color: #61AD2F;
+    font-size: 1.875rem;
+    color: #000000;
 }
 
 section {
