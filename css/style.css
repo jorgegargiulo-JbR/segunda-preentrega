@@ -415,6 +415,7 @@ main .contenido2 .losTrabajos{
     margin-top: 1.25rem;
     width: 100%;
     max-width: 1600px;
+    margin-bottom: 1.875rem;
 }
 
 main .contenido2 .losTrabajos .trabajo{
@@ -426,8 +427,8 @@ main .contenido2 .losTrabajos .trabajo{
 
 main .contenido2 .losTrabajos img{
     width: 80%;
-    object-fit: contain;
-    
+    height: 31.25rem;
+    object-fit: cover;
 }
 
 main .contenido2 .losTrabajos p{
@@ -436,9 +437,27 @@ main .contenido2 .losTrabajos p{
 }
 
 
-/* main .contenido .losTrabajos img{
-    width: 70%;
-    height: auto;
-    object-fit: cover;
-    max-width: 100%;
-} */
+
+/* Estilos para el main de CLIENTES */
+
+
+main .contenido2 .losClientes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12.5rem;
+    margin-top: 1.25rem;
+    width: 100%;
+    max-width: 1600px;
+    margin-bottom: 1.875rem;
+    padding-left: 6.25rem;
+}
+
+main .contenido2 .losClientes img{
+    width: 80%;
+    height: 31.25rem;
+    object-fit: contain;
+}
+
+
+
+
