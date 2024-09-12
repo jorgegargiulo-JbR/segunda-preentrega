@@ -282,6 +282,10 @@ main .losServicios{
     margin: 90px;
 }
 
+#lp, #pm, #me, #ph, #os{
+    scroll-margin-top: 13.75rem;
+}
+
 main .losServicios h3{
     text-align: center;
     margin-bottom: 20px;
@@ -332,9 +336,8 @@ section {
 
 .otrosServicios {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.25rem; /* Espacio entre cada servicio */
+    justify-content:space-evenly;
+    gap: 9.375rem; 
 }
 
 .servicio {
@@ -345,8 +348,8 @@ section {
 
 .servicio h3 {
     margin-bottom: 10px;
-    font-size: 20px;
-    color: #61AD2F;
+    font-size: 25px;
+    color: #000000;
 }
 
 .servicio img {
@@ -361,12 +364,20 @@ section {
     line-height: 1.5;
     color: #000000;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 1.25rem;
 }
 
-/*Tengo que corregir el posicionamiento de "Otros Servicios".
-Incluso, dejan un borde blanco entre el main y el footer, 
-que no encontré de donde salió. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
 
 
 
