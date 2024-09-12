@@ -45,13 +45,23 @@ header .header1 h2{
 }
 
 header .header1 .mail{
+    display: flex;
     font-size: .9375rem;
     margin-bottom: 0;
+    align-items: center;
+    gap: .5rem;
 }
 
 header .header1 .phone{
+    display: flex;
     font-size: .9375rem;
     margin-bottom: 0;
+    align-items: center;
+    gap: .5rem;
+}
+
+header .header1 i{
+    color: #007bff;
 }
 
 /* Logo */
@@ -157,7 +167,6 @@ main .contenido .cajaFotosCuerpo img{
     max-width: 100%;
 }
 
-
 main .contenido article{
     font-size: 1.25rem;
     margin: 5%;
@@ -191,39 +200,40 @@ main .servicios .tilde img{
 main .servicios .tilde a{
     margin: 0;
     padding: 0;
-    
     color: black;
     text-decoration: none;
 }
 
 main .servicios .tilde a h3{
-    font-size: .9375rem;
+    font-size: 1.3rem;
 }
-
-
 
 main .servicios .tilde a:hover{
     color: #61AD2F;
 }
 
+
 /* Estilos para el footer */
 
 
 
-footer .datos{
+/*footer .datos{
     display: flex;
     justify-content: space-around;
     background-color: #61AD2F;
     color:white;
-}
+}*/
 
-footer .datos .ensayos{
+
+
+/*footer .datos .ensayos{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: .9375rem;
     margin-top: 2.5rem;
-    font-size: 1.5625rem;
+    font-size: 2.1875rem;
     font-weight: bold;
 }
 
@@ -248,8 +258,50 @@ footer .datos .telefonos p{
 }
 
 
-footer .copyright{
+*/
+
+footer .datos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    align-items: center;
+    justify-items: center;
     text-align: center;
+    background-color: #61AD2F;
+    padding: 20px;
+    color: #ffffff;
+}
+
+footer .datos .ensayos p {
+    padding-top: .9375rem;
+    font-weight: bold;
+    font-size: 1.875rem;
+}
+
+footer .datos address {
+    font-style: normal; 
+    line-height: 1.5;
+    padding-top: .9375rem;
+}
+
+footer .datos .telefonos p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3.5vh;
+    gap: .125rem; 
+}
+
+footer .datos .telefonos p i {
+    color: #007bff;
+}
+
+:root footer .copyright p{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
